@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            background-color: rgb(255, 207, 157);
+        }
+
+        header {
+            background-color: #633749;
+            color: white;
+            padding: 20px;
+            text-align: left;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav {
+
+            background-color: #333;
+            padding: 10px;
+            display: flex;
+            justify-content: space-around;
+            text-align: right;
+
+
+        }
+
+        nav a {
+            color: white;
+            margin: 0;
+            text-decoration: none;
+
+        }
+
+        section {
+            padding: 20px;
+
+        }
+
+        #product-list {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .products {
+            height: 400px;
+            min-width: 100%;
+            /* border: 2px solid blue; */
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .products .prod {
+            height: 95%;
+            width: 300px;
+            /* border: 2px solid red; */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .products .prod img {
+
+            max-width: 100%;
+            height: 70%;
+
+        }
+
+        .products h3 {
+            margin: 10px;
+        }
+
+        .product p {
+            font-size: 1px;
+            color: #555;
+        }
+
+        footer {
+
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+            bottom: 0;
+        }
+
+        div {
+            display: flex;
+            height: 400px;
+            width: fit-content;
+        }
+
+        .section-sec {
+            display: flex;
+            height: 500px;
+            width: 500px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .adv {
+            height: 500px;
+            width: 100vw;
+        }
+
+        .f-nav {
+            height: 10vh;
+            color: black;
+            background-color: brown;
+            font-size: large;
+            font-style: italic;
+            display: flex;
+            justify-content: space-between;
+            align-items: left;
+        }
+
+        .f-nav .feature {
+            height: 100%;
+            width: 40%;
+            /* border: 2px solid red; */
+            display: flex;
+            justify-content: space-around;
+
+        }
+
+        .f-nav i {
+            margin-top: 20px;
+            color: white;
+        }
+
+        h1 {
+            font-size: 50px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .sec2 {
+            height: 300px;
+            width: 100%;
+            /* border: 2px solid red; */
+            position: relative;
+        }
+
+        .sec2 video {
+            height: 300px;
+            width: 100%;
+
+        }
+
+        #myVideo {
+            position: relative;
+            right: 0;
+            bottom: 0;
+            min-width: 900px;
+            min-height: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>tira Beauty</h1>
+        <p>your Beauty Destination</p>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Shop</a>
+        <a href="#">About us</a>
+        <a href="#">Contact</a>
+    </nav>
+    <nav class="f-nav">
+        <p>BEAUTY BONANZA Get your amazing deals</p>
+        <div class="feature">
+            <div class="app">
+                <i class="fa-solid fa-mobile"></i>
+
+            </div>
+            <div class="app">
+                <i class="fa-solid fa-location-dot"></i>
+
+            </div>
+            <div class="app">
+                <i class="fa-solid fa-gift"></i>
+            </div>
+            <div class="app">
+            </div>
+            <div class="app">
+                <i class="fa-solid fa-circle-info"></i>
+
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+                    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+                    crossorigin="anonymous" referrerpolicy="no-referrer" />
+            </div>
+        </div>
+
+    </nav>
+    <section class="sec2">
+
+        <video autoplay muted loop id="myVideo">
+            <source src="./WhatsApp Video 2024-11-13 at 3.21.43 PM (1).mp4" type="video/mp4">
+        </video>
+
+
+
+    </section>
+    <h2>Your wishlist</h2>
+    <div class="products">
+        <div class="prod">
+            <img src="./b1.webp" alt="Brand">
+            <button>20% off</button>
+
+        </div>
+        <div class="prod">
+            <img src="./b3.webp" alt="Eyeliner">
+            <button>5% off</button>
+
+        </div>
+        <div class="prod">
+            <img src="./b6.jfif" alt="Eyeliner">
+            <button>10% off</button>
+        </div>
+        <div class="prod">
+            <img src="./b5.jfif" alt="Eyeliner">
+            <button>112/-</button>
+        </div>
+    </div>
+    <section class="sec">
+
+        <div class="adv">
+            <img src="./add.avif" alt="add">
+        </div>
+
+    </section>
+    <section>
+        <h2>Lipsticks</h2>
+        <div class="products">
+            <div class="prod">
+                <img src="./lip4.avif" alt="Lipsticks">
+                <button>555/-</button>
+
+            </div>
+            <div class="prod">
+                <img src="./lip3.avif" alt="Lipsticks">
+                <button>666/-</button>
+
+            </div>
+            <div class="prod">
+                <img src="./lip5.jpg" alt="Lipsticks">
+                <button>534/-</button>
+            </div>
+            <div class="prod">
+                <img src="./lip6.avif" alt="Lipsticks">
+                <button>600/-</button>
+            </div>
+
+        </div>
+        <section class="sec">
+
+            <div class="adv">
+                <img src="./ad2.jpg" alt="add">
+                <img src="./ad5.webp" alt="add">
+            </div>
+
+        </section>
+
+        <h2>Compact</h2>
+        <div class="products">
+            <div class="prod">
+                <img src="./c1.webp" alt="Compact">
+                <button>750/-</button>
+
+            </div>
+            <div class="prod">
+                <img src="./c2.jpg" alt="Compact">
+                <button>500/-</button>
+
+            </div>
+            <div class="prod">
+                <img src="./c3.jpg" alt="Compact">
+                <button>600/-</button>
+            </div>
+            <div class="prod">
+                <img src="./c4.jpg" alt="Compact">
+                <button>550/-</button>
+            </div>
+
+        </div>
+        <section class="sec">
+
+            <div class="adv">
+                <img src="./ad6.jpg" alt="add">
+                <img src="./ad7.jpg" alt="add">
+            </div>
+
+        </section>
+
+        <h2>Eyeliner</h2>
+        <div class="products">
+            <div class="prod">
+                <img src="./e1.webp" alt="Eyeliner">
+                <button>211/-</button>
+
+            </div>
+            <div class="prod">
+                <img src="./e2.webp" alt="Eyeliner">
+                <button>231/-</button>
+
+            </div>
+            <div class="prod">
+                <img src="./e3.webp" alt="Eyeliner">
+                <button>223/-</button>
+            </div>
+            <div class="prod">
+                <img src="./e.avif" alt="Eyeliner">
+                <button>112/-</button>
+            </div>
+        </div>
+        <h2>Sunscreens</h2>
+        <div class="products">
+            <div class="prod">
+                <img src="" alt="Eyeliner">
+                <button>211/-</button>
+
+            </div>
+            <div class="prod">
+                <img src="./e2.webp" alt="Eyeliner">
+                <button>231/-</button>
+
+            </div>
+            <div class="prod">
+                <img src="./e3.webp" alt="Eyeliner">
+                <button>223/-</button>
+            </div>
+            <div class="prod">
+                <img src="./e.avif" alt="Eyeliner">
+                <button>112/-</button>
+            </div>
+        </div>
+
+        <h2>Blush</h2>
+        <div class="products">
+            <div class="prod">
+                <img src="./b1.webp" alt="Blush">
+                <button>284/-</button>
+
+            </div>
+            <div class="prod">
+                <img src="./b2.avif" alt="Blush">
+                <button>1950/-</button>
+
+            </div>
+            <div class="prod">
+                <img src="./b3.webp" alt="Blush">
+                <button>1600/-</button>
+            </div>
+            <div class="prod">
+                <img src="./b4.webp" alt="Blush">
+                <button>4000/-</button>
+            </div>
+
+
+    </section>
+
+
+</body>
+
+</html>
